@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'NDCollapsiveDatePicker', :exclusive => true do
+  pod "NDCollapsiveDatePicker", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "NDCollapsiveDatePicker", :path => "../"
+
+  
+end

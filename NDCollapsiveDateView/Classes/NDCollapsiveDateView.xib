@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NDCollapsiveDateView">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xua-zF-LYm">
+                    <rect key="frame" x="0.0" y="0.0" width="310" height="63"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.18544823229999999" green="0.18544823229999999" blue="0.18544823229999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonTouched:" destination="iN0-l3-epB" eventType="touchUpInside" id="DTu-93-l6P"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48y-TO-o02">
+                    <rect key="frame" x="82" y="8" width="220" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="cEj-Qn-yvG">
+                    <rect key="frame" x="20" y="14" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="HcJ-MF-QRS"/>
+                        <constraint firstAttribute="width" constant="32" id="bGF-59-oko"/>
+                    </constraints>
+                </imageView>
+                <pickerView alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6i1-Xg-A6g" customClass="NDCollapsiveDatePickerView">
+                    <rect key="frame" x="64" y="-51" width="238" height="162"/>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cEj-Qn-yvG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" priority="750" constant="5" id="GVV-dp-htt"/>
+                <constraint firstAttribute="trailing" secondItem="6i1-Xg-A6g" secondAttribute="trailing" constant="8" id="LWy-bQ-ihd"/>
+                <constraint firstAttribute="centerY" secondItem="6i1-Xg-A6g" secondAttribute="centerY" id="Qwg-TI-KIj"/>
+                <constraint firstItem="48y-TO-o02" firstAttribute="leading" secondItem="cEj-Qn-yvG" secondAttribute="trailing" constant="30" id="TE7-ud-szL"/>
+                <constraint firstAttribute="trailing" secondItem="Xua-zF-LYm" secondAttribute="trailing" id="ZdN-ru-eu3"/>
+                <constraint firstAttribute="centerY" secondItem="cEj-Qn-yvG" secondAttribute="centerY" id="ch3-b8-ZMy"/>
+                <constraint firstItem="cEj-Qn-yvG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="fHZ-Bl-DVX"/>
+                <constraint firstItem="Xua-zF-LYm" firstAttribute="height" secondItem="6i1-Xg-A6g" secondAttribute="height" id="i7D-Js-39u"/>
+                <constraint firstAttribute="bottom" secondItem="48y-TO-o02" secondAttribute="bottom" constant="8" id="in4-nJ-Hjf"/>
+                <constraint firstAttribute="bottom" secondItem="cEj-Qn-yvG" secondAttribute="bottom" priority="750" constant="5" id="ixb-mC-Iof"/>
+                <constraint firstItem="6i1-Xg-A6g" firstAttribute="leading" secondItem="cEj-Qn-yvG" secondAttribute="trailing" constant="12" id="l1p-Xo-h6r"/>
+                <constraint firstAttribute="bottom" secondItem="Xua-zF-LYm" secondAttribute="bottom" constant="-3" id="op5-0Z-rSh"/>
+                <constraint firstAttribute="trailing" secondItem="48y-TO-o02" secondAttribute="trailing" constant="8" id="qEL-qb-WnU"/>
+                <constraint firstItem="48y-TO-o02" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="sxg-cH-vCd"/>
+                <constraint firstItem="Xua-zF-LYm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="u51-n9-pvJ"/>
+                <constraint firstItem="Xua-zF-LYm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vwx-em-L8M"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collapseButton" destination="Xua-zF-LYm" id="51K-fJ-3Cu"/>
+                <outlet property="collapsiveDatePickerView" destination="6i1-Xg-A6g" id="QlI-nj-9wB"/>
+                <outlet property="collapsiveImageView" destination="cEj-Qn-yvG" id="M6J-nu-amx"/>
+                <outlet property="collapsiveLabel" destination="48y-TO-o02" id="JcH-aL-Ond"/>
+                <outlet property="collapsivePickerViewHeightConstraint" destination="i7D-Js-39u" id="vsw-3j-ObQ"/>
+            </connections>
+            <point key="canvasLocation" x="377" y="545"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="calendar" width="40" height="39"/>
+    </resources>
+</document>

@@ -1,0 +1,14 @@
+PODS:
+  - NDCollapsiveDatePicker (0.1.0)
+
+DEPENDENCIES:
+  - NDCollapsiveDatePicker (from `../`)
+
+EXTERNAL SOURCES:
+  NDCollapsiveDatePicker:
+    :path: ../
+
+SPEC CHECKSUMS:
+  NDCollapsiveDatePicker: d55a8db6fef8c2b2eb06d156c612ad3785a42e1a
+
+COCOAPODS: 0.35.0
