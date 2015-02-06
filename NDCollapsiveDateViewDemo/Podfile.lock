@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  NDCollapsiveDatePicker: c29850f74483d7f504f7224c5ffdeea9c280a89d
+  NDCollapsiveDatePicker: f65e6369b359bdfb84e3325e62235f7376ca42c8
 
 COCOAPODS: 0.35.0
