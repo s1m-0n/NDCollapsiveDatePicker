@@ -7,9 +7,11 @@
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and run `pod install` from the NDCollapsiveDateViewDemo directory first.
 
-## Requirements
+## Description
+
+![Alt text](http://full/path/to/img.jpg "Optional title")
 
 ## Installation
 
