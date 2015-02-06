@@ -18,15 +18,51 @@ it, simply add the following line to your Podfile:
 
 To run the example project, clone the repo, and run `pod install` from the NDCollapsiveDateViewDemo directory first.
 
+Add delegate to protocol into your .h
+``` objective-c
+#import <NDCollapsiveDatePicker/NDCollapsiveDateView.h>
+
+@interface NDViewController : UIViewController <NDCollapsiveDateViewDelegate>
+```
+Use one of two init methods:
 ``` objective-c
 NDCollapsiveDateView collapsiveDateView = [[NDCollapsiveDateView alloc] initWithFrame:frame title:@"Date" andImage:[UIImage imageNamed:@"calendar"]];
-collapsiveDateView.delegate = self;
 [collapsiveDateView setShown:200.f andHiddenHeight:50];
 ```
-
+Or use combined init method:
 ``` objective-c
 NDCollapsiveDateView collapsiveDateView = [[NDCollapsiveDateView alloc] initWithFrame:frame title:@"Date" andImage:UIImage imageNamed:@"calendar" hiddenHeight:50 andShownHeight:200.f];
 ```
+Set delegate:
+``` objective-c
+collapsiveDateView.delegate = self;
+```
+
+include delegate method:
+``` objective-c
+-(void)datePickerViewDidCollapse:(NDCollapsiveDatePickerView *)datePickerView
+```
+
+Example how to get the selected date from NDCollapsiveDateView:
+``` objective-c
+-(void)datePickerViewDidCollapse:(NDCollapsiveDatePickerView *)datePickerView {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"dd-MM-yyyy"];
+    NSString *stringDate = [dateFormatter stringFromDate:datePickerView.date];
+    NSLog(@"selected date: %@",stringDate);
+}
+```
+
+Feel free to customize the NDCollapsiveDateView
+``` objective-c
+collapsiveDateView.backgroundColor = [UIColor whiteColor];
+collapsiveDateView.layer.borderColor = [[UIColor blackColor] CGColor];
+...
+```
+
+## Screenshot
+
+Animated gif of working NDCollapsiveDateView
 
 ![Alt text](https://github.com/s1m-0n/NDCollapsiveDatePicker/blob/master/demo.gif "NDCollapsiveDateView")
 
