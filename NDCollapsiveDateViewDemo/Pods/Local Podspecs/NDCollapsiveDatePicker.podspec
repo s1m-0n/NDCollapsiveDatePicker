@@ -27,14 +27,14 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
-  s.resources = 'Pod/Classes/NDCollapsiveDateView.xib'
+  s.resources = 'NDCollapsiveDateView/Classes/*.{xib}'
+  s.source_files = 'NDCollapsiveDateView/Classes/*.{h,m}'
   s.resource_bundles = {
-    'NDCollapsiveDatePicker' => ['Pod/Assets/*.png']
+    'NDCollapsiveDatePicker' => ['NDCollapsiveDateView/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.resources = ["Pod/Classes/NDCollapsiveDateView.xib"]
+  # s.public_header_files = 'NDCollapsiveDateView/Classes/**/*.h'
+  # s.resources = ["NDCollapsiveDateView/Classes/NDCollapsiveDateView.xib"]
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

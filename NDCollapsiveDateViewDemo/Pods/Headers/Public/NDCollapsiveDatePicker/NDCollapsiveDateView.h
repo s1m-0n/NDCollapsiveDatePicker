@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/NDCollapsiveDateView.h
+../../../../../NDCollapsiveDateView/Classes/NDCollapsiveDateView.h

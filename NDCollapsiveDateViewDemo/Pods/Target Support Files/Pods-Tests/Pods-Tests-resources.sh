@@ -47,7 +47,7 @@ install_resource()
       ;;
   esac
 }
-          install_resource "../../Pod/Classes/NDCollapsiveDateView.xib"
+          install_resource "../../NDCollapsiveDateView/Classes/NDCollapsiveDateView.xib"
                     install_resource "${BUILT_PRODUCTS_DIR}/NDCollapsiveDatePicker.bundle"
           
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
