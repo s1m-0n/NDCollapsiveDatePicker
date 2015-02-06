@@ -10,12 +10,9 @@
 Pod::Spec.new do |s|
   s.name             = "NDCollapsiveDatePicker"
   s.version          = "0.1.0"
-  s.summary          = "NDCollapsiveDatePicker is a customized UIPickerView embedded in a View that provides easy access to user selected dates. NDCollapsiveDatePicker's view itsself is highly customizable."
+  s.summary          = "Pic your dates easily!"
   s.description      = <<-DESC
-                       An optional longer description of NDCollapsiveDatePicker
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       NDCollapsiveDatePicker is a customized UIPickerView embedded in a View that provides easy access to user selected dates. NDCollapsiveDatePicker's view itsself is highly customizable.
                        DESC
   s.homepage         = "https://github.com/s1m-0n/NDCollapseDatePicker"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
