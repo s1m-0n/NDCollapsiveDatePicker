@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "NDCollapsiveDatePicker"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Pic your dates easily!"
   s.description      = <<-DESC
                        NDCollapsiveDatePicker is a customized UIPickerView embedded in a View that provides easy access to user selected dates. NDCollapsiveDatePicker's view itsself is highly customizable.

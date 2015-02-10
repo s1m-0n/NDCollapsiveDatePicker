@@ -12,7 +12,7 @@
 NDCollapsiveDatePicker is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-    pod "NDCollapsiveDatePicker"
+    pod 'NDCollapsiveDatePicker'
 
 ## Usage
 
@@ -68,7 +68,7 @@ Animated gif of working NDCollapsiveDateView
 
 ## Author
 
-Simon Wicha, simon.wicha@nomis-development.net
+Simon Wicha | simon.wicha@nomis-development.net
 
 ## License
 
