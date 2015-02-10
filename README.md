@@ -66,6 +66,9 @@ Animated gif of working NDCollapsiveDateView
 
 ![Alt text](https://github.com/s1m-0n/NDCollapsiveDatePicker/blob/master/demo1.gif "NDCollapsiveDateView")
 
+Screenshot:
+![Alt text](https://github.com/s1m-0n/NDCollapsiveDatePicker/blob/master/screenshot.png "NDCollapsiveDateView-Screenshot")
+
 ## Author
 
 Simon Wicha, simon.wicha@nomis-development.net
