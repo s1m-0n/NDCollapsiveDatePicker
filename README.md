@@ -64,7 +64,7 @@ collapsiveDateView.layer.borderColor = [[UIColor blackColor] CGColor];
 
 Animated gif of working NDCollapsiveDateView
 
-![Alt text](https://github.com/s1m-0n/NDCollapsiveDatePicker/blob/master/demo.gif "NDCollapsiveDateView")
+![Alt text](https://github.com/s1m-0n/NDCollapsiveDatePicker/blob/master/demo1.gif "NDCollapsiveDateView")
 
 ## Author
 
